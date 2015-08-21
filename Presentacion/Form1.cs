@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AccesoADatos;
+using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,13 @@ namespace Presentacion
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var db = new SegurComModel();
+            db.Clientes.Add(new Cliente { Codigo = 1, RazonSocial = "Another Blog " });
+            db.SaveChanges();
         }
     }
 }
