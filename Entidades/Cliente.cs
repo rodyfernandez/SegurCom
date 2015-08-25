@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-   public class Cliente
+    public class Cliente
     {
 
         public int ID { get; set; }
         public int Codigo { get; set; }
         public string RazonSocial { get; set; }
         public DateTime? FechaNacimiento { get; set; }
-
+        public String Dni { get; set; }
         
+
+
+
     }
 }
