@@ -63,6 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes\ClientesHelper.cs" />
+    <Compile Include="Clientes\IClientesHelper.cs" />
+    <Compile Include="Factory\ContextFactory.cs" />
+    <Compile Include="Factory\IContextFactory.cs" />
     <Compile Include="Migrations\201508210015137_InitialCreate.cs" />
     <Compile Include="Migrations\201508210015137_InitialCreate.Designer.cs">
       <DependentUpon>201508210015137_InitialCreate.cs</DependentUpon>
@@ -70,6 +74,10 @@
     <Compile Include="Migrations\201508210021226_AddFechaNacimiento.cs" />
     <Compile Include="Migrations\201508210021226_AddFechaNacimiento.Designer.cs">
       <DependentUpon>201508210021226_AddFechaNacimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508280108272_AddDNI.cs" />
+    <Compile Include="Migrations\201508280108272_AddDNI.Designer.cs">
+      <DependentUpon>201508280108272_AddDNI.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,7 +100,11 @@
     <EmbeddedResource Include="Migrations\201508210021226_AddFechaNacimiento.resx">
       <DependentUpon>201508210021226_AddFechaNacimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508280108272_AddDNI.resx">
+      <DependentUpon>201508280108272_AddDNI.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
