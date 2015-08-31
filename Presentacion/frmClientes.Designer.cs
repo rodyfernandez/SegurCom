@@ -80,6 +80,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 3;
+            this.txtID.Text = "0";
             // 
             // txtCodigo
             // 

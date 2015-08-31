@@ -30,7 +30,7 @@ namespace Presentacion
             Cliente cliente = new Cliente
 
             {
-
+                ID = Convert.ToInt32(txtID.Text),
                 Codigo = Convert.ToInt32(txtCodigo.Text),
                 Dni = txtDni.Text,
                 FechaNacimiento = dtpFechaNac.Value,
@@ -58,7 +58,7 @@ namespace Presentacion
 
         private void btnTraer1_Click(object sender, EventArgs e)
         {
-            Cliente cliente = clientesLogica.Get(4);
+            Cliente cliente = clientesLogica.Get(8);
 
             txtID.Text = cliente.ID.ToString();
             txtCodigo.Text = cliente.Codigo.ToString();
@@ -73,7 +73,7 @@ namespace Presentacion
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             //elimmino el id 7
-            Cliente cliente = clientesLogica.Get(7);
+            Cliente cliente = clientesLogica.Get(8);
             clientesLogica.Delete(cliente);
         }
 
